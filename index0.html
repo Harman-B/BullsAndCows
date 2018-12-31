@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bulls & Cows</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Bulls And Cows</h2>
+    <div class="player1">
+      <input type="password" id="word">
+      <p>
+        <button id="add_word" onclick="startGame()">Start</button>
+      </p>
+    </div>
+    <div id="playArea" style="display:none;">
+
+          <p>Make a guess :</p>
+
+          <div class="">
+            <input id="guessWord">
+            <button id = "add_guess" onclick="makeGuess()">Guess</button>
+          </div>
+
+          <div class="">
+            <p id="error"></p>
+          </div>
+
+          <div class="guess_list">
+            <!-- <p>guess</p> -->
+          </div>
+
+    </div>
+    <script src="bnc3.js" charset="utf-8"></script>
+  </body>
+</html>
