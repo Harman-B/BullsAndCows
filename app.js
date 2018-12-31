@@ -21,9 +21,7 @@ function makeGuess() {
   guess = getGuessWord();
   check = checkGuessWord(word, guess);
   displayResult(guess, check);
-  clearField
-
-  x();
+  clearField();
   if (check.bulls === 4) {
     endGame();
   }

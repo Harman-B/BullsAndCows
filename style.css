@@ -1,3 +1,8 @@
+.container {
+  text-align: center;
+  width: 1180px;
+}
+
 body {
     color: #555;
     font-family: Open Sans;
