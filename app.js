@@ -12,6 +12,11 @@ function startGame() {
   }
 }
 
+function resetGame() {
+  document.querySelector('.guess_list').innerHTML = '';
+  document.getElementById('add_word').disabled = false;
+}
+
 function play(event) {
   if (event.keyCode === 13) {
     makeGuess();
@@ -27,7 +32,6 @@ function makeGuess() {
   if (check.bulls === 4) {
     endGame();
   }
-
 }
 
 function endGame() {
@@ -49,10 +53,8 @@ function getGuessWord() {
   return document.getElementById('guessWord').value;
 }
 
-function  checkGuessWord(word, guessWord) {
-
+function checkGuessWord(word, guessWord) {
   var check, letterComparisonArr;
-
   check = {
     bulls: 0,
     cows: 0,
