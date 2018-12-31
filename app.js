@@ -8,11 +8,13 @@ function startGame() {
     document.getElementById('error').innerText = '';
     document.getElementById('playArea').style.display = 'block';
     document.getElementById('guessWord').focus();
-    document.addEventListener('keypress', function (event) {
-      if (event.keyCode === 13) {
-        makeGuess();
-      }
-    });
+    document.addEventListener('keypress', play);
+  }
+}
+
+function play(event) {
+  if (event.keyCode === 13) {
+    makeGuess();
   }
 }
 
@@ -31,6 +33,7 @@ function makeGuess() {
 function endGame() {
   document.querySelector('.guess_list').insertAdjacentHTML('beforeend', 'You Guessed it Right!!');
   document.getElementById('add_guess').disabled = true;
+  document.removeEventListener('keypress', play);
 }
 
 function getWord() {

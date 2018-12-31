@@ -10,6 +10,7 @@ body {
     position: relative;
     height: 100vh;
     font-weight: 400;
+    background-color: grey;
 }
 
 p, h2 {
