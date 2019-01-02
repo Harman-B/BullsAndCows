@@ -11,8 +11,8 @@
       <div class="player1">
         <input type="password" id="word">
         <p>
-          <button id="add_word" onclick="startGame()">Start</button>
-          <button type="button" name="reset" onclick="resetGame()">Reset</button>
+          <button id="add_word" >Start</button>
+          <button id="reset" type="button" name="reset" >Reset</button>
         </p>
       </div>
       <div id="playArea" style="display:none;">
@@ -21,7 +21,7 @@
 
             <div class="">
               <input id="guessWord">
-              <button id = "add_guess" onclick="makeGuess()">Guess</button>
+              <button id = "add_guess" >Guess</button>
             </div>
 
             <div class="">
@@ -35,5 +35,6 @@
     </div>
 
     <script src="app.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>
